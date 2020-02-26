@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<?php $this->load->view("admin/_partials/head.php") ?>
+  <?php $this->load->view("admin/_partials/head.php") ?>
 </head>
 
 <body id="page-top">

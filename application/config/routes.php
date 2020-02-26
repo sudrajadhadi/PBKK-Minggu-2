@@ -56,3 +56,6 @@ $route['translate_uri_dashes'] = FALSE;
 $route['admin'] = 'DefaultController/index';
 $route['about'] = 'DefaultController/about';
 $route['contact'] = 'DefaultController/contact';
+$route['dashboard'] = 'DefaultController/dashboard';
+$route['product'] = 'Products/index';
+$route['add'] = 'Products/add';

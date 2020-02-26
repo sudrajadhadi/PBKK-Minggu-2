@@ -18,4 +18,8 @@ class DefaultController extends CI_Controller {
 	{
 		$this->load->view('admin/contact');
 	}
+	public function dashboard()
+	{
+		$this->load->view('admin/dashboard');
+	}
 }

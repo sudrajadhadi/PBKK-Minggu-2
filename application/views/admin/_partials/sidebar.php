@@ -13,7 +13,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="<?php echo base_url('admin') ?>">
+        <a class="nav-link" href="<?php echo base_url('dashboard') ?>">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -39,6 +39,22 @@
         <a class="nav-link" href="<?php echo base_url('contact') ?>">
           <i class="fas fa-fw fa-address-card"></i>
           <span>Contacs</span>
+        </a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Product
+      </div>
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url('product') ?>">
+          <i class="fas fa-fw fa-archive"></i>
+          <span>List Product</span>
         </a>
       </li>
 
