@@ -22,7 +22,7 @@
     <!-- Begin Page Content -->
     	<div class="card mb-3">
 			<div class="card-header">
-				<a href="<?php echo base_url('add') ?>"><i class="fas fa-plus"></i> Add New</a>
+				<a href="<?php echo site_url('add') ?>"><i class="fas fa-plus"></i> Add New</a>
 			</div>
 			<div class="card-body">
 				<div class="table-responsive">
@@ -51,9 +51,9 @@
 								<td class="small">
 									<?php echo substr($product->description, 0, 120) ?>...</td>
 								<td width="250">
-									<a href="<?php echo site_url('admin/products/edit/'.$product->product_id) ?>"
+									<a href="<?php echo site_url('edit/'.$product->product_id) ?>"
 									 class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
-									<a onclick="deleteConfirm('<?php echo site_url('admin/products/delete/'.$product->product_id) ?>')"
+									<a onclick="deleteConfirm('<?php echo site_url('delete/'.$product->product_id) ?>')"
 									 href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
 								</td>
 							</tr>
@@ -82,6 +82,12 @@
   <!-- JavaScript-->
   <?php $this->load->view("admin/_partials/js.php") ?>
 
+  	<script>
+	function deleteConfirm(url){
+		$('#btn-delete').attr('href', url);
+		$('#deleteModal').modal();
+	}
+	</script>
 </body>
 
 </html>

@@ -59,3 +59,5 @@ $route['contact'] = 'DefaultController/contact';
 $route['dashboard'] = 'DefaultController/dashboard';
 $route['product'] = 'Products/index';
 $route['add'] = 'Products/add';
+$route['edit/(:any)'] = 'Products/edit/$1';
+$route['delete/(:any)'] = 'Products/delete/$1';

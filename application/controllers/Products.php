@@ -9,12 +9,13 @@ class Products extends CI_Controller
         parent::__construct();
         $this->load->model("product_model");
         $this->load->library('form_validation');
+        $this->load->library('upload');
     }
 
     public function index()
     {
         $data["products"] = $this->product_model->getAll();
-        $this->load->view("admin/product/list", $data);
+        $this->load->view('admin/product/list', $data);
     }
 
     public function add()
@@ -23,6 +24,7 @@ class Products extends CI_Controller
         $validation = $this->form_validation;
         $validation->set_rules($product->rules());
 
+        
         if ($validation->run()) {
             $product->save();
             $this->session->set_flashdata('success', 'Berhasil disimpan');
@@ -47,7 +49,7 @@ class Products extends CI_Controller
         $data["product"] = $product->getById($id);
         if (!$data["product"]) show_404();
         
-        $this->load->view("admin/product/edit_form", $data);
+        $this->load->view('admin/product/edit_form', $data);
     }
 
     public function delete($id=null)
@@ -55,7 +57,7 @@ class Products extends CI_Controller
         if (!isset($id)) show_404();
         
         if ($this->product_model->delete($id)) {
-            redirect(site_url('admin/products'));
+            redirect(site_url('product'));
         }
     }
 }

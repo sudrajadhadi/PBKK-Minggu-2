@@ -1,7 +1,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url('admin') ?>">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo site_url('admin') ?>">
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
@@ -13,7 +13,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="<?php echo base_url('dashboard') ?>">
+        <a class="nav-link" href="<?php echo site_url('dashboard') ?>">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -28,7 +28,7 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url('about') ?>">
+        <a class="nav-link" href="<?php echo site_url('about') ?>">
           <i class="fas fa-fw fa-book"></i>
           <span>About</span>
         </a>
@@ -36,7 +36,7 @@
 
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url('contact') ?>">
+        <a class="nav-link" href="<?php echo site_url('contact') ?>">
           <i class="fas fa-fw fa-address-card"></i>
           <span>Contacs</span>
         </a>
@@ -52,7 +52,7 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url('product') ?>">
+        <a class="nav-link" href="<?php echo site_url('product') ?>">
           <i class="fas fa-fw fa-archive"></i>
           <span>List Product</span>
         </a>
